@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Profile Card</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+    /* Changed font */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    width: 320px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* subtle gradient */
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);   /* card lift effect on hover */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.profile-img {
+    width: 130px;   /* increased size */
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+    /* Add hover zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);  /* zooms 10% on hover */
+}
+
+h2 {
+    margin: 10px 0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stream {
+    color: #555;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.card {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="C:\Program Files\Git\CHE_5622.jpg" class="profile-img">
+
+<h2>Name: Naseef Salman</h2>
+
+<p class="stream">Stream: Computer Science</p>
+
+<p class="bio">
+Short bio: A passionate student who enjoys learning programming and building creative technology projects.
+</p>
+
+</div>
+
+</body>
+</html>
